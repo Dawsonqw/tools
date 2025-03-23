@@ -13,9 +13,17 @@ wget -c https://github.com/clangd/clangd/releases/download/20.1.0/clangd-linux-2
 --compile-commands-dir=${workspaceFolder}/build
 
 # 或者在 vscode 中 settings.json 中添加
-"clangd.arguments": [
-    "--compile-commands-dir=${workspaceFolder}/build" # compile_commands.json 文件所在目录，可以指定多个
-]
+{
+    "clangd.path": "/usr/bin/clangd",
+    "clangd.arguments": [
+        "--compile-commands-dir=${workspaceFolder}/command.json_path/",
+        "--background-index",
+        "--completion-style=detailed",
+        "--header-insertion=never",
+        "--log=info",
+        "--pretty"
+    ],
+}
 ```
 设置clangd path
 

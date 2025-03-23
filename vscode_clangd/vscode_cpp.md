@@ -10,6 +10,7 @@ wget -c https://github.com/clangd/clangd/releases/download/20.1.0/clangd-linux-2
 
 ## 扩展设置中添加选项
 ```bash
+# 插件扩展设置下面参数
 --compile-commands-dir=${workspaceFolder}/build
 
 # 或者在 vscode 中 settings.json 中添加
@@ -24,7 +25,5 @@ wget -c https://github.com/clangd/clangd/releases/download/20.1.0/clangd-linux-2
         "--pretty"
     ],
 }
-```
-设置clangd path
 
 ```

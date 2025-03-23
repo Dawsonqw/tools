@@ -11,7 +11,10 @@ set(CMAKE_CXX_COMPILER g++)
 set(CMAKE_C_COMPILER gcc)
 
 # 设置编译选项
-set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wall")
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wall -g")
+
+# Debug模式
+set(CMAKE_BUILD_TYPE "Debug")
 
 # 头文件路径 {SOURCE_PREFIX}/include
 include_directories(include)
